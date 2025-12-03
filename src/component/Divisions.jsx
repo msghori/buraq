@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Divisions = () => {
+  const navigate = useNavigate();
   return (
     <div
       className="max-w-6xl mx-auto px-4 py-10 text-white text-center"
@@ -20,9 +22,7 @@ const Divisions = () => {
           />
           <h2>
             <button
-              onClick={() =>
-                (window.location.href = "/divisions/restoration-development")
-              }
+              onClick={() => navigate("/divisions/restoration-development")}
               className="hover:text-white cursor-pointer"
             >
               Restoration & Development
@@ -36,7 +36,7 @@ const Divisions = () => {
             className="w-[295px] lg:w-full h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
-            <button onClick={() => window.location.href = '/divisions/site-management'} className="hover:text-white cursor-pointer">
+            <button onClick={() => navigate('/divisions/site-management')} className="hover:text-white cursor-pointer">
               Site Management & Enhancement
             </button>
           </h2>
@@ -50,7 +50,7 @@ const Divisions = () => {
             className="w-[295px] lg:w-full h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
-            <button onClick={() => window.location.href = '/divisions/tourism-infrastructure'} className="hover:text-white cursor-pointer">
+            <button onClick={() => navigate('/divisions/tourism-infrastructure')} className="hover:text-white cursor-pointer">
               Tourism & Infrastructure
             </button>
           </h2>
@@ -62,7 +62,7 @@ const Divisions = () => {
             className="w-[295px] lg:w-full h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
-            <button onClick={() => window.location.href = '/divisions/ai-technology'} className="hover:text-white cursor-pointer">
+            <button onClick={() => navigate('/divisions/ai-technology')} className="hover:text-white cursor-pointer">
               AI & Immersive Technology
             </button>
           </h2>
@@ -74,7 +74,7 @@ const Divisions = () => {
             className="w-[295px] lg:w-full h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
-            <button onClick={() => window.location.href = '/divisions/immersive-films'} className="hover:text-white cursor-pointer">
+            <button onClick={() => navigate('/divisions/immersive-films')} className="hover:text-white cursor-pointer">
               Immersive Films & AV Kiosks
             </button>
           </h2>
@@ -89,7 +89,7 @@ const Divisions = () => {
           />
 
           <h2>
-            <button onClick={() => window.location.href = '/divisions/branding-merchandise'} className="hover:text-white cursor-pointer">
+            <button onClick={() => navigate('/divisions/branding-merchandise')} className="hover:text-white cursor-pointer">
               Branding & Merchandise
             </button>
           </h2>

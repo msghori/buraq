@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer";
 import ScrollToTop from "../../component/ScrollToTop";
 
 const ImmersiveFilms = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-[#1e1e1e] text-white">
       <Navbar />
@@ -169,8 +171,7 @@ const ImmersiveFilms = () => {
                   />
                   <button
                     onClick={() =>
-                      (window.location.href =
-                        "/divisions/restoration-development")
+                      navigate("/divisions/restoration-development")
                     }
                     className="hover:text-white cursor-pointer text-sm"
                   >
@@ -186,9 +187,7 @@ const ImmersiveFilms = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() =>
-                      (window.location.href = "/divisions/site-management")
-                    }
+                    onClick={() => navigate("/divisions/site-management")}
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     Site Management & Enhancement
@@ -204,8 +203,7 @@ const ImmersiveFilms = () => {
                   />
                   <button
                     onClick={() =>
-                      (window.location.href =
-                        "/divisions/tourism-infrastructure")
+                      navigate("/divisions/tourism-infrastructure")
                     }
                     className="hover:text-white cursor-pointer text-sm"
                   >
@@ -221,9 +219,7 @@ const ImmersiveFilms = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() =>
-                      (window.location.href = "/divisions/ai-technology")
-                    }
+                    onClick={() => navigate("/divisions/ai-technology")}
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     AI & Immersive Technology
@@ -238,9 +234,7 @@ const ImmersiveFilms = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() =>
-                      (window.location.href = "/divisions/branding-merchandise")
-                    }
+                    onClick={() => navigate("/divisions/branding-merchandise")}
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     Branding & Merchandise

@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Carousel = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div
@@ -30,7 +32,7 @@ const Carousel = () => {
             the Kingdom becomes the world’s living heritage.
           </p>
           <button
-            onClick={() => window.location.href = '/contact'}
+            onClick={() => navigate('/contact')}
             className="text-white hover:text-[#ed9127] px-6 py-2 rounded-full bg-[#ed9127] hover:bg-[#fff]  cursor-pointer relative z-10 transition-colors"
           >
             Contact Us

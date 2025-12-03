@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer";
 import ScrollToTop from "../../component/ScrollToTop";
 
 const SiteManagement = () => {
+  const navigate = useNavigate();
   return (
     <div className="min-h-screen bg-[#1e1e1e] text-white">
       <Navbar />
@@ -138,8 +140,7 @@ const SiteManagement = () => {
                   />
                   <button
                     onClick={() =>
-                      (window.location.href =
-                        "/divisions/restoration-development")
+                      navigate("/divisions/restoration-development")
                     }
                     className="hover:text-white cursor-pointer text-sm"
                   >
@@ -156,8 +157,7 @@ const SiteManagement = () => {
                   />
                   <button
                     onClick={() =>
-                      (window.location.href =
-                        "/divisions/tourism-infrastructure")
+                      navigate("/divisions/tourism-infrastructure")
                     }
                     className="hover:text-white cursor-pointer text-sm"
                   >
@@ -174,7 +174,7 @@ const SiteManagement = () => {
                   />
                   <button
                     onClick={() =>
-                      (window.location.href = "/divisions/ai-technology")
+                      (navigate("/divisions/ai-technology"))
                     }
                     className="hover:text-white cursor-pointer text-sm"
                   >
@@ -191,7 +191,7 @@ const SiteManagement = () => {
                   />
                   <button
                     onClick={() =>
-                      (window.location.href = "/divisions/immersive-films")
+                      (navigate("/divisions/immersive-films"))
                     }
                     className="hover:text-white cursor-pointer text-sm"
                   >
@@ -208,7 +208,7 @@ const SiteManagement = () => {
                   />
                   <button
                     onClick={() =>
-                      (window.location.href = "/divisions/branding-merchandise")
+                      (navigate("/divisions/branding-merchandise"))
                     }
                     className="hover:text-white cursor-pointer text-sm"
                   >
