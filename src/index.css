@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+/* FONTS */
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NotoSerif";
+  src: url("/fonts/NotoSerif-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Comforter";
+  src: url("/fonts/Comforter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-notoSerif: var(--font-family-notoSerif);
+  --font-poppins: var(--font-family-poppins);
+  --font-Comforter: var(--font-family-Comforter);
+  --text-yellowColor: var(--text-yellow-color);
+}
+
+/* VARIABLES */
+:root {
+  --font-family-notoSerif: "NotoSerif";
+  --font-family-poppins: "Poppins";
+  --font-family-Comforter: "Comforter";
+  --font-weight-Light: 300;
+  --font-weight-Regular: 400;
+  --font-weight-Medium: 500;
+  --font-weight-SemiBold: 600;
+  --font-weight-Bold: 700;
+
+  --text-white-color: #ffffff;
+  --bg-black-color: #1e1e1e;
+  --text-yellow-color: #f39412;
+}
+
+/* GLOBAL STYLES */
+body {
+  margin: 0;
+  min-width: 300px;
+  min-height: 100vh;
+  font-family: var(--font-family-poppins);
+  font-weight: var(--font-weight-Regular);
+  background-color: var(--bg-black-color);
+  overflow-x: hidden;
+}
+
+.ylwColor {
+  color: var(--text-yellow-color);
+}
+.bgYlwColor {
+  background-color: var(--text-yellow-color);
+}
+.blackColor {
+  background-color: var(--bg-black-color);
+}
