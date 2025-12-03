@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <header className="w-full bg-[#1e1e1e] text-white fixed top-0 z-50">
@@ -11,10 +14,10 @@ export default function Navbar() {
           <li>
             <button
               onClick={() => {
-                if (window.location.pathname === '/') {
+                if (location.pathname === '/') {
                   document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
                 } else {
-                  window.location.href = '/#home';
+                  navigate('/#home');
                 }
               }}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
@@ -25,10 +28,10 @@ export default function Navbar() {
           <li>
             <button
               onClick={() => {
-                if (window.location.pathname === '/') {
+                if (location.pathname === '/') {
                   document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
                 } else {
-                  window.location.href = '/#about';
+                  navigate('/#about');
                 }
               }}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
@@ -39,10 +42,10 @@ export default function Navbar() {
           <li>
             <button
               onClick={() => {
-                if (window.location.pathname === '/') {
+                if (location.pathname === '/') {
                   document.getElementById('opportunity')?.scrollIntoView({ behavior: 'smooth' });
                 } else {
-                  window.location.href = '/#opportunity';
+                  navigate('/#opportunity');
                 }
               }}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
@@ -54,13 +57,13 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <a href="/">
+          <button onClick={() => navigate('/')}>
             <img
               src={`${import.meta.env.BASE_URL}images/${"logo-header.webp"}`}
               alt="Logo"
               className="h-10 md:h-15 w-auto"
             />
-          </a>
+          </button>
         </div>
 
         {/* Right Links */}
@@ -68,10 +71,10 @@ export default function Navbar() {
           <li>
             <button
               onClick={() => {
-                if (window.location.pathname === '/') {
+                if (location.pathname === '/') {
                   document.getElementById('divisions')?.scrollIntoView({ behavior: 'smooth' });
                 } else {
-                  window.location.href = '/#divisions';
+                  navigate('/#divisions');
                 }
               }}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
@@ -81,7 +84,7 @@ export default function Navbar() {
           </li>
           <li>
             <button
-              onClick={() => (window.location.href = "/leaders")}
+              onClick={() => navigate('/leaders')}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
             >
               Leaders
@@ -89,7 +92,7 @@ export default function Navbar() {
           </li>
           <li>
             <button
-              onClick={() => (window.location.href = "/contact")}
+              onClick={() => navigate('/contact')}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
             >
               Contact
@@ -108,10 +111,10 @@ export default function Navbar() {
         <div className="md:hidden bg-black-100 py-4 px-4 space-y-3">
           <button
             onClick={() => {
-              if (window.location.pathname === '/') {
+              if (location.pathname === '/') {
                 document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
               } else {
-                window.location.href = '/#home';
+                navigate('/#home');
               }
               setOpen(false);
             }}
@@ -121,10 +124,10 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              if (window.location.pathname === '/') {
+              if (location.pathname === '/') {
                 document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
               } else {
-                window.location.href = '/#about';
+                navigate('/#about');
               }
               setOpen(false);
             }}
@@ -134,10 +137,10 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              if (window.location.pathname === '/') {
+              if (location.pathname === '/') {
                 document.getElementById('opportunity')?.scrollIntoView({ behavior: 'smooth' });
               } else {
-                window.location.href = '/#opportunity';
+                navigate('/#opportunity');
               }
               setOpen(false);
             }}
@@ -147,10 +150,10 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              if (window.location.pathname === '/') {
+              if (location.pathname === '/') {
                 document.getElementById('divisions')?.scrollIntoView({ behavior: 'smooth' });
               } else {
-                window.location.href = '/#divisions';
+                navigate('/#divisions');
               }
               setOpen(false);
             }}
@@ -160,7 +163,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              window.location.href = '/leaders';
+              navigate('/leaders');
               setOpen(false);
             }}
             className="block font-medium text-left cursor-pointer w-full py-2"
@@ -169,7 +172,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              window.location.href = '/contact';
+              navigate('/contact');
               setOpen(false);
             }}
             className="block font-medium text-left cursor-pointer w-full py-2"
