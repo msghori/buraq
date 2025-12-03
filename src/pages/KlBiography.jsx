@@ -486,6 +486,26 @@ const KlBiography = () => {
               </div>
             </CollapsibleTab>
           </div>
+          {/* collapse detail */}
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-10">
+            {/* lashari */}
+            <div className="col-span-2  flex items-center">
+              <h1 className="ylwColor text-2xl font-notoSerif mb-2">
+                “We do not want to turn the Walled City into a museum. We want
+                its people to live with dignity.”{" "}
+                <span className="font-poppins"> — Kamran Lashari</span>
+              </h1>
+            </div>
+            <div className="col-span-2">
+              <img
+                src={`${
+                  import.meta.env.BASE_URL
+                }images/biography/kamran-digital-4.webp`}
+                alt="biography"
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

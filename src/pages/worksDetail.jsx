@@ -1,5 +1,6 @@
 import Footer from "../component/Footer";
 import Header from "../component/Header";
+import WorkCarousel from "../component/WorkCarousel";
 
 const WorksDetail = () => {
   return (
@@ -13,7 +14,7 @@ const WorksDetail = () => {
             style={{
               backgroundImage: `url('${
                 import.meta.env.BASE_URL
-              }images/divisions/ai-immers-banner.webp')`,
+              }images/work/work-banner.webp')`,
             }}
           >
             <div className="text-center">
@@ -28,10 +29,8 @@ const WorksDetail = () => {
             </div>
           </div>
         </div>
-        <div className="">
-          <h1 className="ylwColor text-4xl font-bold mb-0 font-notoSerif text-center mt-8">
-            Walled City of Lahore Authority
-          </h1>
+        <div className="max-w-7xl mx-auto px-4 pt-10">
+          <WorkCarousel />
         </div>
       </div>
       <Footer />
