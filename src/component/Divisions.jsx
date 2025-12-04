@@ -17,13 +17,13 @@ const Divisions = () => {
         Divisions
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center ylwColor font-notoSerif font-extrabold">
-        <div className="max-w-[300px] md:max-w-auto mx-auto  border rounded-md px-20 pt-15 pb-10 relative mb-[200px] lg:mb-[250px]">
+        <div className="max-w-[300px] md:max-w-full mx-auto  border rounded-md px-20 pt-15 pb-10 relative mb-[200px] lg:mb-[250px]">
           <img
             src={`${
               import.meta.env.BASE_URL
             }images/divisions/restoration-dev.webp`}
             alt="Opportunity"
-            className="w-[295px] lg:w-full h-65 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
+            className="w-[295px] lg:w-full h-65 md:h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
             <button
@@ -36,11 +36,11 @@ const Divisions = () => {
             </button>
           </h2>
         </div>
-        <div className="max-w-[300px] md:max-w-auto mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-[200px] lg:mb-[250px]">
+        <div className="max-w-[300px] md:max-w-full mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-[200px] lg:mb-[250px]">
           <img
             src={`${import.meta.env.BASE_URL}images/divisions/site-mana.png`}
             alt="Opportunity"
-            className="w-[295px] lg:w-full h-65 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
+            className="w-[295px] lg:w-full h-65 md:h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
             <button
@@ -51,13 +51,13 @@ const Divisions = () => {
             </button>
           </h2>
         </div>
-        <div className="max-w-[300px] md:max-w-auto mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-[200px] lg:mb-[250px]">
+        <div className="max-w-[300px] md:max-w-full mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-[200px] lg:mb-[250px]">
           <img
             src={`${
               import.meta.env.BASE_URL
             }images/divisions/tourism-Infra.webp`}
             alt="Opportunity"
-            className="w-[295px] lg:w-full h-65 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
+            className="w-[295px] lg:w-full h-65 md:h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
             <button
@@ -70,11 +70,11 @@ const Divisions = () => {
             </button>
           </h2>
         </div>
-        <div className="max-w-[300px] md:max-w-auto mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-[200px] md:mb-0">
+        <div className="max-w-[300px] md:max-w-full mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-[200px] md:mb-0">
           <img
             src={`${import.meta.env.BASE_URL}images/divisions/ai-immers.webp`}
             alt="Opportunity"
-            className="w-[295px] lg:w-full h-65 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
+            className="w-[295px] lg:w-full h-65 md:h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
             <button
@@ -85,11 +85,11 @@ const Divisions = () => {
             </button>
           </h2>
         </div>
-        <div className="max-w-[300px] md:max-w-auto mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-[200px] md:mb-0">
+        <div className="max-w-[300px] md:max-w-full mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-[200px] md:mb-0">
           <img
             src={`${import.meta.env.BASE_URL}images/divisions/film-av.webp`}
             alt="Opportunity"
-            className="w-[295px] lg:w-full h-65 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
+            className="w-[295px] lg:w-full h-65 md:h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
             <button
@@ -100,13 +100,13 @@ const Divisions = () => {
             </button>
           </h2>
         </div>
-        <div className="max-w-[300px] md:max-w-auto mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-0">
+        <div className="max-w-[300px] md:max-w-full mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-0">
           <img
             src={`${
               import.meta.env.BASE_URL
             }images/divisions/branding-merchandise.webp`}
             alt="Opportunity"
-            className="w-[295px] lg:w-full h-65 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
+            className="w-[295px] lg:w-full h-65 md:h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
 
           <h2>
