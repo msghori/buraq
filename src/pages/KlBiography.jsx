@@ -37,9 +37,9 @@ const KlBiography = () => {
           </div>
         </div>
         <div className="max-w-7xl mx-auto px-4 pt-10">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-10">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-0 md:gap-8 py-5 md:py-10">
             {/* lashari */}
-            <div className="col-span-1">
+            <div className="col-span-1 mb-4 md:mb-0">
               <img
                 src={`${
                   import.meta.env.BASE_URL
@@ -253,7 +253,7 @@ const KlBiography = () => {
               onToggle={() => setOpenTab(openTab === 2 ? -1 : 2)}
             >
               <h1 className="font-notoSerif mb-3">Honors & Achievements</h1>
-              <div className="grid grid-cols-1 grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
                   <img
                     src={`${
@@ -466,12 +466,13 @@ const KlBiography = () => {
                 </div>
               </div>
             </CollapsibleTab>
+
             <CollapsibleTab
               title="Education"
               isOpen={openTab === 5}
               onToggle={() => setOpenTab(openTab === 5 ? -1 : 5)}
             >
-              <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-20">
+              <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-20">
                 <div className="border rounded-lg p-4 text-left border-[#f39412]">
                   <h1 className="font-notoSerif">
                     M.Sc. Public Administration
@@ -492,7 +493,7 @@ const KlBiography = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-10">
             {/* lashari */}
             <div className="col-span-2  flex items-center">
-              <h1 className="ylwColor text-2xl font-notoSerif mb-2">
+              <h1 className="ylwColor text-xl md:text-2xl font-notoSerif mb-2">
                 “We do not want to turn the Walled City into a museum. We want
                 its people to live with dignity.”{" "}
                 <span className="font-poppins"> — Kamran Lashari</span>
@@ -523,7 +524,7 @@ const CollapsibleTab = ({ title, children, isOpen = false, onToggle }) => {
         onClick={onToggle}
         className="w-full flex justify-between items-center p-4 text-left hover:bg-gray-800 transition-colors cursor-pointer"
       >
-        <h3 className="ylwColor text-xl font-semibold">{title}</h3>
+        <h3 className="ylwColor text-md md:text-xl font-semibold">{title}</h3>
         <svg
           className={`w-8 h-8 ylwColor transition-transform ${
             isOpen ? "rotate-90" : ""
