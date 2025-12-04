@@ -6,6 +6,17 @@ export default function Navbar() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const scrollToSection = (sectionId) => {
+    if (location.pathname === '/') {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  };
+
   return (
     <header className="w-full bg-[#1e1e1e] text-white fixed top-0 z-50">
       <nav className="container mx-auto px-4 py-4 md:py-6 flex items-center justify-between">
@@ -13,13 +24,7 @@ export default function Navbar() {
         <ul className="hidden md:flex space-x-6 font-regular">
           <li>
             <button
-              onClick={() => {
-                if (location.pathname === '/') {
-                  document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  navigate('/#home');
-                }
-              }}
+              onClick={() => scrollToSection('home')}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
             >
               Home
@@ -27,13 +32,7 @@ export default function Navbar() {
           </li>
           <li>
             <button
-              onClick={() => {
-                if (location.pathname === '/') {
-                  document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  navigate('/#about');
-                }
-              }}
+              onClick={() => scrollToSection('about')}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
             >
               About
@@ -41,13 +40,7 @@ export default function Navbar() {
           </li>
           <li>
             <button
-              onClick={() => {
-                if (location.pathname === '/') {
-                  document.getElementById('opportunity')?.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  navigate('/#opportunity');
-                }
-              }}
+              onClick={() => scrollToSection('opportunity')}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
             >
               Opportunity
@@ -70,13 +63,7 @@ export default function Navbar() {
         <ul className="hidden md:flex space-x-6 font-medium">
           <li>
             <button
-              onClick={() => {
-                if (location.pathname === '/') {
-                  document.getElementById('divisions')?.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  navigate('/#divisions');
-                }
-              }}
+              onClick={() => scrollToSection('divisions')}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
             >
               Divisions
@@ -111,11 +98,7 @@ export default function Navbar() {
         <div className="md:hidden bg-black-100 py-4 px-4 space-y-3">
           <button
             onClick={() => {
-              if (location.pathname === '/') {
-                document.getElementById('home')?.scrollIntoView({ behavior: 'smooth' });
-              } else {
-                navigate('/#home');
-              }
+              scrollToSection('home');
               setOpen(false);
             }}
             className="block font-medium text-left cursor-pointer w-full py-2"
@@ -124,11 +107,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              if (location.pathname === '/') {
-                document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
-              } else {
-                navigate('/#about');
-              }
+              scrollToSection('about');
               setOpen(false);
             }}
             className="block font-medium text-left cursor-pointer w-full py-2"
@@ -137,11 +116,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              if (location.pathname === '/') {
-                document.getElementById('opportunity')?.scrollIntoView({ behavior: 'smooth' });
-              } else {
-                navigate('/#opportunity');
-              }
+              scrollToSection('opportunity');
               setOpen(false);
             }}
             className="block font-medium text-left cursor-pointer w-full py-2"
@@ -150,11 +125,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              if (location.pathname === '/') {
-                document.getElementById('divisions')?.scrollIntoView({ behavior: 'smooth' });
-              } else {
-                navigate('/#divisions');
-              }
+              scrollToSection('divisions');
               setOpen(false);
             }}
             className="block font-medium text-left cursor-pointer w-full py-2"

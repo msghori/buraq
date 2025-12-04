@@ -11,10 +11,12 @@ import ImmersiveFilms from "./pages/divisions/ImmersiveFilms";
 import BrandingMerchandise from "./pages/divisions/BrandingMerchandise";
 import WorksDetail from "./pages/worksDetail";
 import KlBiography from "./pages/KlBiography";
+import { CleanRouter } from "./components/CleanRouter";
 
 function App() {
   return (
-    <Routes>
+    <CleanRouter>
+      <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/leaders" element={<Leaders />} />
       <Route path="/contact" element={<ContactUs />} />
@@ -35,7 +37,8 @@ function App() {
       />
       <Route path="/worksDetail" element={<WorksDetail />} />
       <Route path="/KlBiography" element={<KlBiography />} />
-    </Routes>
+      </Routes>
+    </CleanRouter>
   );
 }
 

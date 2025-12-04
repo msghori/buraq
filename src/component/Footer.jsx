@@ -7,11 +7,12 @@ const Footer = () => {
 
   const handleSectionNavigation = (sectionId) => {
     if (location.pathname === '/') {
-      // If on home page, scroll to section
       document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
     } else {
-      // If on other page, navigate to home with hash
-      navigate(`/#${sectionId}`);
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
     }
   };
   return (

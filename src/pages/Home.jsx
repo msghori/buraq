@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Header from "../component/Header";
 import Carousel from "../component/Carousel";
 import Vision from "../component/Vision";
@@ -8,17 +8,6 @@ import Footer from "../component/Footer";
 import ScrollToTop from "../component/ScrollToTop";
 
 const Home = () => {
-  useEffect(() => {
-    const hash = window.location.hash;
-    if (hash) {
-      setTimeout(() => {
-        const element = document.getElementById(hash.substring(1));
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    }
-  }, []);
 
   return (
     <>

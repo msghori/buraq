@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
 import ScrollToTop from "../component/ScrollToTop";
+import { useCleanURL } from "../hooks/useCleanURL";
 
 const Leaders = () => {
+  useCleanURL();
   return (
     <div className="min-h-screen bg-[#1e1e1e] text-white">
       <Navbar />

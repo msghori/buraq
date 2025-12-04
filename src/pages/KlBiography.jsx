@@ -4,9 +4,11 @@ import Footer from "../component/Footer";
 // import Navbar from "../component/Navbar";
 import Header from "../component/Header";
 import ScrollToTop from "../component/ScrollToTop";
+import { useCleanURL } from "../hooks/useCleanURL";
 
 const KlBiography = () => {
   const [openTab, setOpenTab] = useState(0);
+  useCleanURL();
 
   return (
     <>

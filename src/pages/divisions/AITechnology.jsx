@@ -3,9 +3,11 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../component/Navbar";
 import Footer from "../../component/Footer";
 import ScrollToTop from "../../component/ScrollToTop";
+import { useCleanURL } from "../../hooks/useCleanURL";
 
 const AITechnology = () => {
   const navigate = useNavigate();
+  useCleanURL();
   return (
     <div className="min-h-screen bg-[#1e1e1e] text-white">
       <Navbar />
