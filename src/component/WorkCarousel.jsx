@@ -77,13 +77,13 @@ export default function WorkCarousel() {
       {/* Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-2 -translate-y-1/2 p-2 rounded-full hover:bg-opacity-90 cursor-pointer"
+        className="absolute top-1/2 left-0 -translate-y-1/2 cursor-pointer hover:opacity-80"
       >
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
           <path
             d="M15 18L9 12L15 6"
             stroke="#f39412"
-            strokeWidth="2"
+            strokeWidth="3"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
@@ -91,13 +91,13 @@ export default function WorkCarousel() {
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-2 -translate-y-1/2  p-2 rounded-full hover:bg-opacity-90 cursor-pointer"
+        className="absolute top-1/2 right-0 -translate-y-1/2 cursor-pointer hover:opacity-80"
       >
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
           <path
             d="M9 18L15 12L9 6"
             stroke="#f39412"
-            strokeWidth="2"
+            strokeWidth="3"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
