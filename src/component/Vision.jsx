@@ -33,7 +33,7 @@ const Vision = () => {
           <li className="py-2 md:py-8">
             <span className="ylwColor">D</span>evelop
           </li>
-          <li className="list-none text-6xl md:text-6xl pt-3 w-full md:w-auto">
+          <li className="list-none text-4xl md:text-6xl pt-3 w-full md:w-auto">
             <span className="ylwColor font-Comforter">with</span>
           </li>
           <li className="list-none py-2 md:py-8">

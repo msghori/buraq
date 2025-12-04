@@ -8,7 +8,7 @@ import { useCleanURL } from "../../hooks/useCleanURL";
 const TourismInfrastructure = () => {
   const navigate = useNavigate();
   useCleanURL();
-  
+
   const navigateToPage = (path) => {
     navigate(path);
     window.scrollTo(0, 0);
@@ -34,7 +34,7 @@ const TourismInfrastructure = () => {
                 becomes a story of sanctity, culture, and prosperity.
               </p>
               <div
-                className="absolute top-[-30px] right-[-70px]"
+                className="absolute top-[-30px] right-[-70px] hidden md:block"
                 style={{
                   backgroundImage: `url('${
                     import.meta.env.BASE_URL
@@ -49,7 +49,7 @@ const TourismInfrastructure = () => {
 
           {/* Content */}
           <div className="max-w-7xl mx-auto px-4 py-10">
-            <h1 className="ylwColor text-4xl font-bold mb-4 font-notoSerif text-center mb-12">
+            <h1 className="ylwColor text-4xl font-bold font-notoSerif text-center mb-12">
               The Tourism & Infrastructre
             </h1>
 
@@ -167,7 +167,9 @@ const TourismInfrastructure = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() => navigateToPage("/divisions/restoration-development")}
+                    onClick={() =>
+                      navigateToPage("/divisions/restoration-development")
+                    }
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     Restoration & Development
@@ -227,7 +229,9 @@ const TourismInfrastructure = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() => navigateToPage("/divisions/branding-merchandise")}
+                    onClick={() =>
+                      navigateToPage("/divisions/branding-merchandise")
+                    }
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     Branding & Merchandise

@@ -32,8 +32,8 @@ const Carousel = () => {
             the Kingdom becomes the world’s living heritage.
           </p>
           <button
-            onClick={() => navigate('/contact')}
-            className="text-white hover:text-[#ed9127] px-6 py-2 rounded-full bg-[#ed9127] hover:bg-[#fff]  cursor-pointer relative z-10 transition-colors"
+            onClick={() => navigate("/contact")}
+            className="text-md text-white hover:text-[#ed9127] px-4 md:px-6 py-1 md:py-2 rounded-full bg-[#ed9127] hover:bg-white  cursor-pointer relative z-10 transition-colors"
           >
             Contact Us
           </button>

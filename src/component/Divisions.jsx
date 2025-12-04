@@ -23,7 +23,7 @@ const Divisions = () => {
               import.meta.env.BASE_URL
             }images/divisions/restoration-dev.webp`}
             alt="Opportunity"
-            className="w-[295px] lg:w-full h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
+            className="w-[295px] lg:w-full h-65 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
             <button
@@ -40,7 +40,7 @@ const Divisions = () => {
           <img
             src={`${import.meta.env.BASE_URL}images/divisions/site-mana.png`}
             alt="Opportunity"
-            className="w-[295px] lg:w-full h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
+            className="w-[295px] lg:w-full h-65 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
             <button
@@ -57,7 +57,7 @@ const Divisions = () => {
               import.meta.env.BASE_URL
             }images/divisions/tourism-Infra.webp`}
             alt="Opportunity"
-            className="w-[295px] lg:w-full h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
+            className="w-[295px] lg:w-full h-65 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
             <button
@@ -74,7 +74,7 @@ const Divisions = () => {
           <img
             src={`${import.meta.env.BASE_URL}images/divisions/ai-immers.webp`}
             alt="Opportunity"
-            className="w-[295px] lg:w-full h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
+            className="w-[295px] lg:w-full h-65 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
             <button
@@ -89,7 +89,7 @@ const Divisions = () => {
           <img
             src={`${import.meta.env.BASE_URL}images/divisions/film-av.webp`}
             alt="Opportunity"
-            className="w-[295px] lg:w-full h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
+            className="w-[295px] lg:w-full h-65 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
           <h2>
             <button
@@ -106,7 +106,7 @@ const Divisions = () => {
               import.meta.env.BASE_URL
             }images/divisions/branding-merchandise.webp`}
             alt="Opportunity"
-            className="w-[295px] lg:w-full h-80 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
+            className="w-[295px] lg:w-full h-65 object-contain absolute top-[-70px] lg:top-[-100px] left-1/2  p-4 -translate-x-1/2 -translate-y-1/2"
           />
 
           <h2>

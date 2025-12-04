@@ -8,7 +8,7 @@ import { useCleanURL } from "../../hooks/useCleanURL";
 const ImmersiveFilms = () => {
   const navigate = useNavigate();
   useCleanURL();
-  
+
   const navigateToPage = (path) => {
     navigate(path);
     window.scrollTo(0, 0);
@@ -35,7 +35,7 @@ const ImmersiveFilms = () => {
                 just be remembered it will be impossible to forget.
               </p>
               <div
-                className="absolute top-[-30px] right-[-70px]"
+                className="absolute top-[-30px] right-[-70px] hidden md:block"
                 style={{
                   backgroundImage: `url('${
                     import.meta.env.BASE_URL
@@ -177,7 +177,9 @@ const ImmersiveFilms = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() => navigateToPage("/divisions/restoration-development")}
+                    onClick={() =>
+                      navigateToPage("/divisions/restoration-development")
+                    }
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     Restoration & Development
@@ -207,7 +209,9 @@ const ImmersiveFilms = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() => navigateToPage("/divisions/tourism-infrastructure")}
+                    onClick={() =>
+                      navigateToPage("/divisions/tourism-infrastructure")
+                    }
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     Tourism & Infrastructure
@@ -237,7 +241,9 @@ const ImmersiveFilms = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() => navigateToPage("/divisions/branding-merchandise")}
+                    onClick={() =>
+                      navigateToPage("/divisions/branding-merchandise")
+                    }
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     Branding & Merchandise
