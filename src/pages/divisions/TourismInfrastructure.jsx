@@ -8,6 +8,11 @@ import { useCleanURL } from "../../hooks/useCleanURL";
 const TourismInfrastructure = () => {
   const navigate = useNavigate();
   useCleanURL();
+  
+  const navigateToPage = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="min-h-screen bg-[#1e1e1e] text-white">
       <Navbar />
@@ -162,9 +167,7 @@ const TourismInfrastructure = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() =>
-                      navigate("/divisions/restoration-development")
-                    }
+                    onClick={() => navigateToPage("/divisions/restoration-development")}
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     Restoration & Development
@@ -179,9 +182,7 @@ const TourismInfrastructure = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() =>
-                      (navigate("/divisions/site-management"))
-                    }
+                    onClick={() => navigateToPage("/divisions/site-management")}
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     Site Management & Enhancement
@@ -196,9 +197,7 @@ const TourismInfrastructure = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() =>
-                      (navigate("/divisions/ai-technology"))
-                    }
+                    onClick={() => navigateToPage("/divisions/ai-technology")}
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     AI & Immersive Technology
@@ -213,9 +212,7 @@ const TourismInfrastructure = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() =>
-                      (navigate("/divisions/immersive-films"))
-                    }
+                    onClick={() => navigateToPage("/divisions/immersive-films")}
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     Immersive Films & AV Kiosks
@@ -230,9 +227,7 @@ const TourismInfrastructure = () => {
                     className="w-full h-70 sm:h-50 object-contain absolute top-[-80px] md:top-[-40px] left-1/2 p-4 -translate-x-1/2 -translate-y-1/2"
                   />
                   <button
-                    onClick={() =>
-                      (navigate("/divisions/branding-merchandise"))
-                    }
+                    onClick={() => navigateToPage("/divisions/branding-merchandise")}
                     className="hover:text-white cursor-pointer text-sm"
                   >
                     Branding & Merchandise

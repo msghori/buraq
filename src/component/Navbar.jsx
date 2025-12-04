@@ -1,30 +1,52 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const scrollToSection = (sectionId) => {
-    if (location.pathname === '/') {
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    if (location.pathname === "/") {
+      document
+        .getElementById(sectionId)
+        ?.scrollIntoView({ behavior: "smooth" });
     } else {
-      navigate('/');
+      navigate("/");
       setTimeout(() => {
-        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+        document
+          .getElementById(sectionId)
+          ?.scrollIntoView({ behavior: "smooth" });
       }, 100);
     }
   };
 
   return (
-    <header className="w-full bg-[#1e1e1e] text-white fixed top-0 z-50">
-      <nav className="container mx-auto px-4 py-4 md:py-6 flex items-center justify-between">
+    <header
+      className={`w-full bg-[#1e1e1e] text-white fixed top-0 z-50 transition-all duration-300 ${
+        scrolled ? "py-0" : "py-0"
+      }`}
+    >
+      <nav
+        className={`container mx-auto px-4 flex items-center justify-between transition-all duration-300 ${
+          scrolled ? "py-2 md:py-3" : "py-4 md:py-6"
+        }`}
+      >
         {/* Left Links */}
         <ul className="hidden md:flex space-x-6 font-regular">
           <li>
             <button
-              onClick={() => scrollToSection('home')}
+              onClick={() => scrollToSection("home")}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
             >
               Home
@@ -32,7 +54,7 @@ export default function Navbar() {
           </li>
           <li>
             <button
-              onClick={() => scrollToSection('about')}
+              onClick={() => scrollToSection("about")}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
             >
               About
@@ -40,7 +62,7 @@ export default function Navbar() {
           </li>
           <li>
             <button
-              onClick={() => scrollToSection('opportunity')}
+              onClick={() => scrollToSection("opportunity")}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
             >
               Opportunity
@@ -50,11 +72,11 @@ export default function Navbar() {
 
         {/* Logo */}
         <div className="text-2xl font-bold">
-          <button onClick={() => navigate('/')}>
+          <button onClick={() => navigate("/")}>
             <img
               src={`${import.meta.env.BASE_URL}images/${"logo-header.webp"}`}
               alt="Logo"
-              className="h-10 md:h-15 w-auto"
+              className="h-10 md:h-15 w-auto cursor-pointer"
             />
           </button>
         </div>
@@ -63,7 +85,7 @@ export default function Navbar() {
         <ul className="hidden md:flex space-x-6 font-medium">
           <li>
             <button
-              onClick={() => scrollToSection('divisions')}
+              onClick={() => scrollToSection("divisions")}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
             >
               Divisions
@@ -71,7 +93,10 @@ export default function Navbar() {
           </li>
           <li>
             <button
-              onClick={() => navigate('/leaders')}
+              onClick={() => {
+                navigate("/leaders");
+                window.scrollTo(0, 0);
+              }}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
             >
               Leaders
@@ -79,7 +104,10 @@ export default function Navbar() {
           </li>
           <li>
             <button
-              onClick={() => navigate('/contact')}
+              onClick={() => {
+                navigate("/contact");
+                window.scrollTo(0, 0);
+              }}
               className="hover:text-[#ed9127] hover:bg-white px-3 py-1 rounded-full cursor-pointer"
             >
               Contact
@@ -98,7 +126,7 @@ export default function Navbar() {
         <div className="md:hidden bg-black-100 py-4 px-4 space-y-3">
           <button
             onClick={() => {
-              scrollToSection('home');
+              scrollToSection("home");
               setOpen(false);
             }}
             className="block font-medium text-left cursor-pointer w-full py-2"
@@ -107,7 +135,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              scrollToSection('about');
+              scrollToSection("about");
               setOpen(false);
             }}
             className="block font-medium text-left cursor-pointer w-full py-2"
@@ -116,7 +144,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              scrollToSection('opportunity');
+              scrollToSection("opportunity");
               setOpen(false);
             }}
             className="block font-medium text-left cursor-pointer w-full py-2"
@@ -125,7 +153,7 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              scrollToSection('divisions');
+              scrollToSection("divisions");
               setOpen(false);
             }}
             className="block font-medium text-left cursor-pointer w-full py-2"
@@ -134,7 +162,8 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              navigate('/leaders');
+              navigate("/leaders");
+              window.scrollTo(0, 0);
               setOpen(false);
             }}
             className="block font-medium text-left cursor-pointer w-full py-2"
@@ -143,7 +172,8 @@ export default function Navbar() {
           </button>
           <button
             onClick={() => {
-              navigate('/contact');
+              navigate("/contact");
+              window.scrollTo(0, 0);
               setOpen(false);
             }}
             className="block font-medium text-left cursor-pointer w-full py-2"

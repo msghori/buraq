@@ -64,12 +64,12 @@ export default function WorkCarousel() {
   };
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto">
-      <div className="overflow-hidden rounded-lg">
+    <div className="relative w-full max-w-7xl mx-auto mb-8">
+      <div className="overflow-hidden rounded-lg h-auto md:h-[500px] object-contain bg-[#1e1e1e]">
         <img
           src={images[current]}
           alt={`slide ${current}`}
-          className="w-full h-64 md:h-96 object-cover transition-all duration-500"
+          className="w-full h-full object-contain transition-all duration-500"
           onError={nextSlide} // 👉 Skip missing image
         />
       </div>
@@ -77,24 +77,40 @@ export default function WorkCarousel() {
       {/* Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-2 -translate-y-1/2 bg-white bg-opacity-70 p-2 rounded-full"
+        className="absolute top-1/2 left-2 -translate-y-1/2 p-2 rounded-full hover:bg-opacity-90 cursor-pointer"
       >
-        &#8592;
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M15 18L9 12L15 6"
+            stroke="#f39412"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
       </button>
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-2 -translate-y-1/2 bg-white bg-opacity-70 p-2 rounded-full"
+        className="absolute top-1/2 right-2 -translate-y-1/2  p-2 rounded-full hover:bg-opacity-90 cursor-pointer"
       >
-        &#8594;
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+          <path
+            d="M9 18L15 12L9 6"
+            stroke="#f39412"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
       </button>
 
       {/* Dots */}
-      <div className="flex justify-center mt-4 space-x-2">
+      <div className="flex flex-wrap justify-center mt-4 space-x-2">
         {images.map((_, index) => (
           <span
             key={index}
-            className={`w-3 h-3 rounded-full cursor-pointer ${
-              index === current ? "bg-blue-500" : "bg-gray-300"
+            className={`w-3 h-3 rounded-full mb-2 hidden sm:block cursor-pointer ${
+              index === current ? "bg-white" : "bg-[#f39412]"
             }`}
             onClick={() => setCurrent(index)}
           ></span>
