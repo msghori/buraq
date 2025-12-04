@@ -17,7 +17,7 @@ const Divisions = () => {
         Divisions
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center ylwColor font-notoSerif font-extrabold">
-        <div className="border rounded-md px-20 pt-15 pb-10 relative mb-[200px] lg:mb-[250px]">
+        <div className="max-w-[300px] md:max-w-auto mx-auto  border rounded-md px-20 pt-15 pb-10 relative mb-[200px] lg:mb-[250px]">
           <img
             src={`${
               import.meta.env.BASE_URL
@@ -36,7 +36,7 @@ const Divisions = () => {
             </button>
           </h2>
         </div>
-        <div className="border rounded-md px-20 pt-15 pb-10 relative mb-[200px] lg:mb-[250px]">
+        <div className="max-w-[300px] md:max-w-auto mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-[200px] lg:mb-[250px]">
           <img
             src={`${import.meta.env.BASE_URL}images/divisions/site-mana.png`}
             alt="Opportunity"
@@ -51,7 +51,7 @@ const Divisions = () => {
             </button>
           </h2>
         </div>
-        <div className="border rounded-md px-20 pt-15 pb-10 relative mb-[200px] lg:mb-[250px]">
+        <div className="max-w-[300px] md:max-w-auto mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-[200px] lg:mb-[250px]">
           <img
             src={`${
               import.meta.env.BASE_URL
@@ -70,7 +70,7 @@ const Divisions = () => {
             </button>
           </h2>
         </div>
-        <div className="border rounded-md px-20 pt-15 pb-10 relative mb-[200px] md:mb-0">
+        <div className="max-w-[300px] md:max-w-auto mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-[200px] md:mb-0">
           <img
             src={`${import.meta.env.BASE_URL}images/divisions/ai-immers.webp`}
             alt="Opportunity"
@@ -85,7 +85,7 @@ const Divisions = () => {
             </button>
           </h2>
         </div>
-        <div className="border rounded-md px-20 pt-15 pb-10 relative mb-[200px] md:mb-0">
+        <div className="max-w-[300px] md:max-w-auto mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-[200px] md:mb-0">
           <img
             src={`${import.meta.env.BASE_URL}images/divisions/film-av.webp`}
             alt="Opportunity"
@@ -100,7 +100,7 @@ const Divisions = () => {
             </button>
           </h2>
         </div>
-        <div className="border rounded-md px-20 pt-15 pb-10 relative mb-0">
+        <div className="max-w-[300px] md:max-w-auto mx-auto border rounded-md px-20 pt-15 pb-10 relative mb-0">
           <img
             src={`${
               import.meta.env.BASE_URL
