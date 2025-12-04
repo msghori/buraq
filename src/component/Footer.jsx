@@ -6,12 +6,16 @@ const Footer = () => {
   const location = useLocation();
 
   const handleSectionNavigation = (sectionId) => {
-    if (location.pathname === '/') {
-      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname === "/") {
+      document
+        .getElementById(sectionId)
+        ?.scrollIntoView({ behavior: "smooth" });
     } else {
-      navigate('/');
+      navigate("/");
       setTimeout(() => {
-        document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+        document
+          .getElementById(sectionId)
+          ?.scrollIntoView({ behavior: "smooth" });
       }, 100);
     }
   };
@@ -22,7 +26,7 @@ const Footer = () => {
           {/* Logo and Location Section */}
           <div className="col-span-3">
             {/* Logo */}
-            <div className="mb-3">
+            <div className="">
               <div className="flex items-center">
                 <img
                   src={`${import.meta.env.BASE_URL}images/logo-header.webp`}
@@ -33,7 +37,7 @@ const Footer = () => {
             </div>
 
             {/* Location */}
-            <div className="mt-4">
+            <div className="mt-4 hidden">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                 <div className="text-gray-300 text-sm leading-tight">
                   <h1 className="font-bold">KSA</h1>
