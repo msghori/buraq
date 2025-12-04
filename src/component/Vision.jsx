@@ -60,7 +60,7 @@ const Vision = () => {
                     The Vision
                   </h2>
                   <p className="mb-6">
-                    We are theGuardians of
+                    We are the Guardians of
                     <span className="font-bold">
                       {" "}
                       Custodians Of Sanctity{" "}
