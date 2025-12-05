@@ -21,7 +21,7 @@ const KlBiography = () => {
             style={{
               backgroundImage: `url('${
                 import.meta.env.BASE_URL
-              }images/divisions/ai-immers-banner.webp')`,
+              }images/work/work-banner.webp')`,
             }}
           >
             <div className="text-center">

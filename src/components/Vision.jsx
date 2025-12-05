@@ -17,36 +17,36 @@ const Vision = () => {
           color: "#ffffff",
         }}
       >
-        <h1 className="ylwColor  font-bold mb-4 font-notoSerif px-4 text-2xl md:text-4xl">
+        <h1 className="ylwColor  font-bold mb-4 font-notoSerif px-4 text-xl md:text-4xl">
           Guardians of Sanctity. Builders of Legacy.
         </h1>
-        <ul className=" list-disc list-inside flex flex-wrap justify-center space-x-4 md:space-x-6 text-sm md:text-xl px-4 mb-8">
+        <ul className=" list-inside flex flex-wrap justify-center space-x-2 md:space-x-6 text-[12px] md:text-xl px-4 mb-8">
           <li className="list-none py-2 md:py-8">
-            <span className="ylwColor">C</span>onserve
+            <span className="ylwColor">C</span>onserve.
           </li>
           <li className="py-2 md:py-8">
-            <span className="ylwColor">R</span>estore
+            <span className="ylwColor">R</span>estore.
           </li>
           <li className="py-2 md:py-8">
-            <span className="ylwColor">P</span>reserve
+            <span className="ylwColor">P</span>reserve.
           </li>
           <li className="py-2 md:py-8">
-            <span className="ylwColor">D</span>evelop
+            <span className="ylwColor">D</span>evelop.
           </li>
-          <li className="list-none text-4xl md:text-6xl pt-3 w-full md:w-auto">
+          <li className="list-none text-4xl md:text-6xl pt-0 w-full md:w-auto">
             <span className="ylwColor font-Comforter">with</span>
           </li>
           <li className="list-none py-2 md:py-8">
-            <span className="ylwColor">S</span>anctity
+            <span className="ylwColor">S</span>anctity.
           </li>
           <li className="py-2 md:py-8">
-            <span className="ylwColor">S</span>pirituality
+            <span className="ylwColor">S</span>pirituality.
           </li>
           <li className="py-2 md:py-8">
-            <span className="ylwColor">S</span>pirit
+            <span className="ylwColor">S</span>pirit.
           </li>
           <li className="py-2 md:py-8">
-            <span className="ylwColor">S</span>ustainability
+            <span className="ylwColor">S</span>ustainability.
           </li>
         </ul>
         {/* vision and mission holder */}
@@ -56,10 +56,10 @@ const Vision = () => {
               {/* left box vision */}
               <div className="flex-1 px-4 pt-[100px] ps-4 md:ps-[110px] bg-transparent order-1">
                 <div className="py-4 text-left">
-                  <h2 className="text-2xl md:text-4xl font-bold mb-2 font-notoSerif ylwColor">
+                  <h2 className="text-xl md:text-4xl font-bold mb-2 font-notoSerif ylwColor">
                     The Vision
                   </h2>
-                  <p className="mb-6">
+                  <p className="mb-6 text-sm">
                     We are the Guardians of
                     <span className="font-bold">
                       {" "}
@@ -68,7 +68,7 @@ const Vision = () => {
                     - reviving the spirit, soul, and spirituality of Islamic
                     heritage in a sustainable way.
                   </p>
-                  <p>
+                  <p className="text-sm">
                     We are also the{" "}
                     <span className="font-bold"> Builders of Legacy </span> -
                     Transforming Arab culture and the stories of the Kingdom
@@ -76,17 +76,17 @@ const Vision = () => {
                   </p>
                 </div>
                 <div className="py-4 text-left">
-                  <h2 className="text-2xl md:text-4xl font-bold mb-2 font-notoSerif ylwColor">
+                  <h2 className="text-xl md:text-4xl font-bold mb-2 font-notoSerif ylwColor">
                     The Mission
                   </h2>
-                  <p>
+                  <p className="text-sm">
                     Our mission is twofold:
                     <br />
                     <span className="font-bold"> Religious Tourism: </span> To
                     safeguard sacred sites and pilgrim journeys, ensuring every
                     step is dignified and every prayer enriched with history.
                   </p>
-                  <p>
+                  <p className="text-sm">
                     <span className="font-bold"> Cultural Tourism: </span> To
                     inspire Arab youth and global travelers, offering not only
                     entertainment but also enlightenment creating cultural

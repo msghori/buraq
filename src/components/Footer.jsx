@@ -158,7 +158,7 @@ const Footer = () => {
         {/* Copyright and Legal Links */}
         <div className="border-t border-[#666666] mt-6 pt-4">
           <div className="flex flex-col md:flex-row justify-center items-center">
-            <div className="flex flex-row space-x-4 md:space-x-6 mb-2 md:mb-0">
+            <div className="flex flex-row space-x-4 md:space-x-6 mb-2 md:mb-0 hidden">
               <button className="text-[#666666] hover:text-white text-sm transition-colors">
                 Privacy Policy
               </button>

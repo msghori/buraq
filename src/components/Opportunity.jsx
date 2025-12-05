@@ -3,7 +3,7 @@ import React from "react";
 const Opportunity = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 pt-10" id="opportunity">
-      <h1 className="ylwColor font-bold mb-4 font-notoSerif px-4 text-2xl md:text-4xl">
+      <h1 className="ylwColor font-bold mb-4 font-notoSerif px-4 text-xl md:text-4xl">
         The Opportunity
       </h1>
       <p className="text-sm md:text-md lg:text-xl mb-6 md:mb-8 font-poppins  text-left md:text-center">

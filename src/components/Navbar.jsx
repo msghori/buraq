@@ -43,7 +43,7 @@ export default function Navbar() {
         }`}
       >
         {/* Left Links */}
-        <ul className="hidden md:flex space-x-6 font-regular">
+        <ul className="hidden md:flex space-x-0 lg:space-x-6 font-regular">
           <li>
             <button
               onClick={() => scrollToSection("home")}
@@ -82,7 +82,7 @@ export default function Navbar() {
         </div>
 
         {/* Right Links */}
-        <ul className="hidden md:flex space-x-6 font-medium">
+        <ul className="hidden md:flex  space-x-0 lg:space-x-6 font-medium">
           <li>
             <button
               onClick={() => scrollToSection("divisions")}
