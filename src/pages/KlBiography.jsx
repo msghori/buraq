@@ -4,11 +4,8 @@ import Footer from "../components/Footer";
 // import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import ScrollToTop from "../components/ScrollToTop";
-import { useCleanURL } from "../hooks/useCleanURL";
-
 const KlBiography = () => {
   const [openTab, setOpenTab] = useState(0);
-  useCleanURL();
 
   return (
     <>
@@ -62,7 +59,7 @@ const KlBiography = () => {
                 <div>Cultural Diplomacy</div>
                 <div>Sustainability Leadership</div>
               </div>
-              <p className="text-white leading-relaxed">
+              <p className="text-white text-sm leading-relaxed">
                 A highly respected and visionary civil servant with 40+ years of
                 impactful leadership in Pakistan’s top government institutions.
                 Widely recognized as the Architect of Modern Islamabad and the
@@ -73,7 +70,7 @@ const KlBiography = () => {
                 large-scale project execution, strategic policy design, and
                 heritage-led tourism.
               </p>
-              <div className="max-w-lg mx-auto text-center p-4 mt-4 rounded-lg bg-[#343434]">
+              <div className="max-w-lg mx-auto text-sm text-center p-4 mt-4 rounded-lg bg-[#343434]">
                 <p>
                   We do not want to turn the Walled City into a museum. We want
                   its people to live with dignity
@@ -91,11 +88,13 @@ const KlBiography = () => {
               <div className="grid grid-cols-1 md:grid-cols-5">
                 <div className="col-span-4">
                   <div className="grid grid-cols-1 md:grid-cols-3 font-notoSerif mb-2">
-                    <span>Director General</span>
+                    <span className="ylwColor mb-2">Director General</span>
                     <span>Walled City of Lahore Authority</span>
-                    <span className="text-sm">(Apr 2012 – May 2025)</span>
+                    <span className="text-[12px] opacity-80 font-poppins">
+                      Apr 2012 – May 2025
+                    </span>
                   </div>
-                  <div className="text-white leading-relaxed mb-8">
+                  <div className="text-white text-sm leading-relaxed mb-8">
                     Spearheaded comprehensive conservation of Lahore’s
                     400-year-old Walled City.
                     <br /> Directed landmark restorations: Shahi Hammam (UNESCO
@@ -109,57 +108,79 @@ const KlBiography = () => {
                     <br /> Fostered international cultural diplomacy — organized
                     exclusive heritage tours for foreign dignitaries.
                     <br />
-                    <h2 className="font-bold"> Guided mega-projects:</h2>
+                    <h2 className="font-bold mt-4"> Guided mega-projects:</h2>
                     Old Fortified Wall Reconstruction: PKR 1.88 billion
                     <br /> Spice Market Infrastructure Revamp: PKR 1.005 billion
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 font-notoSerif">
-                    <span>Federal Secretary</span>
+                    <span className="ylwColor mb-2">Federal Secretary</span>
                     <span>Ministry of Petroleum</span>
-                    <span className="text-sm">Islamabad, 2010</span>
+                    <span className="text-[12px] opacity-80 font-poppins">
+                      Islamabad, 2010
+                    </span>
                   </div>
-                  <p className="text-white leading-relaxed mb-6 mt-1">
+                  <p className="text-white text-sm leading-relaxed mb-6 mt-1">
                     Provided strategic leadership and high-level policy
                     direction for Pakistan’s vital petroleum sector.
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 font-notoSerif">
-                    <span>Chief Commissioner</span>
+                    <span className="ylwColor mb-2">Chief Commissioner</span>
                     <span>Islamabad Capital Territory (ICT)</span>
-                    <span className="text-sm">Islamabad, 2009</span>
+                    <span className="text-[12px] opacity-80 font-poppins">
+                      Islamabad, 2009
+                    </span>
                   </div>
-                  <p className="text-white leading-relaxed mb-6  mt-1">
+                  <p className="text-white text-sm leading-relaxed mb-6  mt-1">
                     Oversaw the administration and governance of the capital
                     city, ensuring efficient public service delivery.
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 font-notoSerif">
-                    <span>Federal Secretary</span>
+                    <span className="ylwColor mb-2">Federal Secretary</span>
                     <span>Ministry of Environment</span>
-                    <span className="text-sm">Islamabad, 1 year</span>
+                    <span className="text-[12px] opacity-80 font-poppins">
+                      Islamabad, 1 year
+                    </span>
                   </div>
-                  <p className="text-white leading-relaxed mb-6  mt-1">
+                  <p className="text-white text-sm leading-relaxed mb-6  mt-1">
                     Guided national-level environmental policy and
                     sustainability programs.
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 font-notoSerif">
-                    <span>Federal Secretary</span>
+                    <span className="ylwColor mb-2">Federal Secretary</span>
                     <span>Ministry of Housing & Works</span>
-                    <span className="text-sm">Islamabad, 2 years</span>
+                    <span className="text-[12px] opacity-80 font-poppins">
+                      Islamabad, 2 years
+                    </span>
                   </div>
-                  <p className="text-white leading-relaxed mb-6  mt-1">
+                  <p className="text-white text-sm leading-relaxed mb-6  mt-1">
                     Directed national housing schemes and key urban
                     infrastructure developments in Islamabad.
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 font-notoSerif">
-                    <span>Director General</span>
-                    <span>Parks & Horticulture Authority (PHA)</span>
-                    <span className="text-sm">Lahore, 1998 – 2003</span>
+                    <span className="ylwColor mb-2">Chairman</span>
+                    <span>Capital Development Authority (CDA)</span>
+                    <span className="text-[12px] opacity-80 font-poppins">
+                      Nov 2003 – Oct 2008
+                    </span>
                   </div>
-                  <p className="text-white leading-relaxed mb-6  mt-1">
+                  <p className="text-white text-sm leading-relaxed mb-6  mt-1">
+                    Directed national housing schemes and key urban
+                    infrastructure developments in Islamabad.
+                  </p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-3 font-notoSerif">
+                    <span className="ylwColor mb-2">Director General</span>
+                    <span>Parks & Horticulture Authority (PHA)</span>
+                    <span className="text-[12px] opacity-80 font-poppins">
+                      Lahore, 1998 – 2003
+                    </span>
+                  </div>
+                  <p className="text-white text-sm leading-relaxed mb-6  mt-1">
                     Created the iconic Gawalmandi Food Street (2002), one of
                     Pakistan’s most innovative cultural urban projects.
                     <br />
@@ -170,12 +191,14 @@ const KlBiography = () => {
                     public cricket grounds.
                   </p>
 
-                  <div className="grid grid-cols-1 md:grid-cols-3">
-                    <span>Deputy Commissioner</span>
+                  <div className="grid grid-cols-1 md:grid-cols-3 font-notoSerif">
+                    <span className="ylwColor mb-2">Deputy Commissioner</span>
                     <span>Lahore</span>
-                    <span className="text-sm">Twice, 1993 – 1996</span>
+                    <span className="text-[12px] opacity-80 font-poppins">
+                      Twice, 1993 – 1996
+                    </span>
                   </div>
-                  <p className="text-white leading-relaxed mb-6  mt-1">
+                  <p className="text-white text-sm leading-relaxed mb-6  mt-1">
                     Managed district administration, public services, and law
                     and order.
                     <br />
@@ -222,7 +245,7 @@ const KlBiography = () => {
               <div className="grid grid-cols-1 md:grid-cols-3">
                 <div>
                   <span className="font-notoSerif">Aga Khan Trust</span>
-                  <p className="text-white leading-relaxed pt-2">
+                  <p className="text-white text-sm leading-relaxed pt-2 mb-2">
                     Partnered with Aga Khan Trust for Culture, US Embassy,
                     Evacuee Trust Property Board, and the World Bank for
                     heritage conservation and urban regeneration.
@@ -230,7 +253,7 @@ const KlBiography = () => {
                 </div>
                 <div>
                   <span className="font-notoSerif">Cross-sector alliances</span>
-                  <p className="text-white leading-relaxed pt-2">
+                  <p className="text-white text-sm leading-relaxed pt-2 mb-2">
                     Pioneered cross-sector alliances for the Bhatti Gate
                     Rehabilitation Project — restoring 538 heritage buildings
                     under the Punjab Tourism Economic Growth Program.{" "}
@@ -238,7 +261,7 @@ const KlBiography = () => {
                 </div>
                 <div>
                   <span className="font-notoSerif">International Agencies</span>
-                  <p className="text-white leading-relaxed pt-2">
+                  <p className="text-white text-sm leading-relaxed pt-2 mb-2">
                     Collaborated with international agencies to conserve the
                     Naag Mandir inside Lahore Fort — highlighting interfaith
                     cultural preservation.{" "}
@@ -266,7 +289,7 @@ const KlBiography = () => {
                     <span className="text-sm float-right">2025</span>
                     Knight of the Order of Arts and Letters (France)
                   </h2>
-                  <p className="text-sm">
+                  <p className="text-[12px]">
                     Awarded by French Ministry of Culture
                   </p>
                 </div>
@@ -280,7 +303,7 @@ const KlBiography = () => {
                   />
                   <span className="text-sm float-right">2016</span>
                   <h2 className="text-sm mb-2">UNESCO Award of Merit </h2>
-                  <p className="text-sm">
+                  <p className="text-[12px]">
                     For exemplary restoration of the Shahi Hammam, Lahore.
                   </p>
                 </div>
@@ -296,7 +319,7 @@ const KlBiography = () => {
                     75 Development Leadership Award
                     <span className="text-sm float-right">2023</span>
                   </h2>
-                  <p className="text-sm">
+                  <p className="text-[12px]">
                     From the Ministry of Planning, Development & Special
                     Initiatives, for national socio-economic progress.
                   </p>
@@ -313,7 +336,7 @@ const KlBiography = () => {
                     Tamgha-e-Imtiaz
                     <span className="text-sm float-right">2020</span>
                   </h2>
-                  <p className="text-sm inline">
+                  <p className="text-[12px] inline">
                     Civil Award by the President of Pakistan for outstanding
                     public service.
                   </p>
@@ -329,7 +352,7 @@ const KlBiography = () => {
                   <h2 className="text-sm mb-2">
                     Commendation Certificate – Quaid-i-Azam Day Ceremony
                   </h2>
-                  <p className="text-sm">
+                  <p className="text-[12px]">
                     For outstanding performance in organizing a national
                     celebration.
                   </p>
@@ -346,7 +369,7 @@ const KlBiography = () => {
                     Most Creative Project
                     <span className="text-sm float-right">2002</span>
                   </h2>
-                  <p className="text-sm inline">
+                  <p className="text-[12px] inline">
                     Recognized for the creation of Gawalmandi Food Street as a
                     culturally transformative initiative.
                   </p>
@@ -364,9 +387,9 @@ const KlBiography = () => {
                   <div className="grid grid-cols-1 md:grid-cols-3 font-notoSerif mb-2">
                     <span>Voice-over Narration</span>
                     <span>The Legend of Maula Jatt</span>
-                    <span className="text-sm">2022</span>
+                    <span className="text-sm opacity-80">2022</span>
                   </div>
-                  <p className="text-white leading-relaxed mb-8">
+                  <p className="text-white text-sm leading-relaxed mb-8">
                     Served as the narrator for the critically acclaimed and
                     commercially successful film The Legend of Maula Jatt,
                     directed by Bilal Lashari.
@@ -378,9 +401,9 @@ const KlBiography = () => {
                   <div className="grid grid-cols-1 md:grid-cols-3 font-notoSerif mb-2">
                     <span>On-screen Appearance</span>
                     <span>Waar</span>
-                    <span className="text-sm">2013</span>
+                    <span className="text-sm opacity-80">2013</span>
                   </div>
-                  <p className="text-white leading-relaxed mb-8">
+                  <p className="text-white text-sm leading-relaxed mb-8">
                     Served as the narrator for the critically acclaimed and
                     commercially successful film The Legend of Maula Jatt,
                     directed by Bilal Lashari. <br /> Provided the opening and
@@ -407,42 +430,46 @@ const KlBiography = () => {
                       Conservation
                     </span>
                   </div>
-                  <p className="text-white leading-relaxed mb-6">
+                  <p className="text-white text-sm leading-relaxed mb-6">
                     Date: May 18, 2024 Venue: University of Lahore <br />
                     Engaged with global experts to shape international
                     strategies for preserving tangible and intangible cultural
                     heritage.
                   </p>
                   <ul>
-                    <li>
+                    <li className="mb-2">
                       <span className="font-notoSerif">
                         President, Old Ravians Union
                       </span>{" "}
-                      – GC University Lahore (2006–2017)
+                      <span className="text-sm">
+                        – GC University Lahore (2006–2017)
+                      </span>
                     </li>
-                    <li>
+                    <li className="mb-2">
                       <span className="font-notoSerif">
                         President, Pakistan Swimming Federation
                       </span>{" "}
-                      (2004–2012)
+                      <span className="text-sm">(2004–2012)</span>
                     </li>
-                    <li>
+                    <li className="mb-2">
                       <span className="font-notoSerif">
                         Chairman, Lahore Gymkhana Club
                       </span>{" "}
-                      (2017–2020)
+                      <span className="text-sm">(2017–2020)</span>
                     </li>
-                    <li>
+                    <li className="mb-2">
                       <span className="font-notoSerif">
                         Vice President, Pakistan Olympics Association
                       </span>{" "}
-                      (entered OCA in 2015)
+                      <span className="text-sm">(entered OCA in 2015)</span>
                     </li>
-                    <li>
+                    <li className="mb-2">
                       <span className="font-notoSerif">
                         Chairman, Lahore Arts Council
                       </span>{" "}
-                      – Alhamra (2017; resigned March 31, 2017)
+                      <span className="text-sm">
+                        – Alhamra (2017; resigned March 31, 2017)
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -496,7 +523,7 @@ const KlBiography = () => {
               <h1 className="ylwColor text-xl md:text-2xl font-notoSerif mb-2">
                 “We do not want to turn the Walled City into a museum. We want
                 its people to live with dignity.”{" "}
-                <span className="font-poppins"> — Kamran Lashari</span>
+                <span className="font-poppins text-sm"> — Kamran Lashari</span>
               </h1>
             </div>
             <div className="col-span-2">

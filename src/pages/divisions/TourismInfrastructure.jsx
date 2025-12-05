@@ -3,11 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import ScrollToTop from "../../components/ScrollToTop";
-import { useCleanURL } from "../../hooks/useCleanURL";
-
 const TourismInfrastructure = () => {
   const navigate = useNavigate();
-  useCleanURL();
 
   const navigateToPage = (path) => {
     navigate(path);
@@ -28,7 +25,7 @@ const TourismInfrastructure = () => {
             }}
           >
             <div className="text-center relative">
-              <p className="max-w-6xl max-auto text-white text-2xl md:text-4xl px-2 md:px-0">
+              <p className="max-w-4xl max-auto text-white text-xl md:text-2xl px-2 md:px-0">
                 Building not only the pathways of faith, but the pathways of
                 Arab pride. Under the House of Saud’s stewardship, every journey
                 becomes a story of sanctity, culture, and prosperity.
@@ -49,7 +46,7 @@ const TourismInfrastructure = () => {
 
           {/* Content */}
           <div className="max-w-7xl mx-auto px-4 py-10">
-            <h1 className="ylwColor text-4xl font-bold font-notoSerif text-center mb-12">
+            <h1 className="ylwColor text-2xl md:text-4xl font-bold font-notoSerif text-center mb-12">
               The Tourism & Infrastructre
             </h1>
 
@@ -58,7 +55,7 @@ const TourismInfrastructure = () => {
             </h2>
             <h3 className="ylwColor text-md text-left mb-4">Our Mission</h3>
 
-            <p className="text-white leading-relaxed mb-6">
+            <p className="text-white text-sm leading-relaxed mb-6">
               Pilgrimage is sacred, but the journey must also inspire pride,
               identity, and prosperity.
               <br /> Buraq designs the supporting ecosystem of trails, hubs, and
@@ -67,7 +64,7 @@ const TourismInfrastructure = () => {
             </p>
 
             <h3 className="ylwColor text-md text-left mb-4">Core Focus</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>LHeritage Trails & Infrastructure</li>
               <li>
                 Pilgrim-friendly pathways linking sacred sites to cultural
@@ -121,7 +118,7 @@ const TourismInfrastructure = () => {
             </ul>
 
             <h3 className="ylwColor text-md text-left mb-4">Visitor Value</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 For ministries: Buraq is the one-stop partner that not only
                 manages sites, but builds a global-ready tourism economy around
@@ -137,7 +134,7 @@ const TourismInfrastructure = () => {
               </li>
             </ul>
             <h3 className="ylwColor text-md text-left mb-4">Why Invest?</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md mb-[250px]">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm mb-[250px]">
               <li>
                 Revenue Expansion: Tourism ecosystem multiplies spend across
                 infrastructure, hospitality, retail, and events.

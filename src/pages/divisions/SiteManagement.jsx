@@ -3,11 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import ScrollToTop from "../../components/ScrollToTop";
-import { useCleanURL } from "../../hooks/useCleanURL";
-
 const SiteManagement = () => {
   const navigate = useNavigate();
-  useCleanURL();
 
   const navigateToPage = (path) => {
     navigate(path);
@@ -28,7 +25,7 @@ const SiteManagement = () => {
             }}
           >
             <div className="text-center relative">
-              <p className="max-w-6xl max-auto text-white text-2xl md:text-4xl px-2 md:px-0">
+              <p className="max-w-4xl max-auto text-white text-xl px-2 md:px-0">
                 Transforms sacred sites into sanctuaries of peace and prosperity
                 where pilgrims pray in comfort, travelers engage with meaning,
                 and investors see heritage turn into recurring revenue.
@@ -49,13 +46,13 @@ const SiteManagement = () => {
 
           {/* Content */}
           <div className="max-w-7xl mx-auto px-4 py-10">
-            <h1 className="ylwColor text-4xl font-bold mb-4 font-notoSerif text-center mb-12">
+            <h1 className="ylwColor text-2xl md:text-4xl font-bold font-notoSerif text-center mb-12">
               The Site Management & Enhancement
             </h1>
             <h2 className="ylwColor text-xl md:text-2xl text-left mb-4">
               Re-imagined radiant sanctuaries.
             </h2>
-            <p className="text-white leading-relaxed mb-6">
+            <p className="text-white text-sm leading-relaxed mb-6">
               Heritage is not preserved by restoration alone — it must be
               sustained, beautified, and experienced with dignity. Buraq ensures
               that every sacred site moves from survival to serenity, from
@@ -63,7 +60,7 @@ const SiteManagement = () => {
             </p>
 
             <h3 className="ylwColor text-md text-left mb-4">Core Focus</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 Long-Term Upkeep & Beautification: Continuous care of mosques,
                 museums and heritage spaces so they remain pristine for
@@ -93,7 +90,7 @@ const SiteManagement = () => {
             </ul>
 
             <h3 className="ylwColor text-md text-left mb-4">Visitor Value</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 Visitors experience peace, beauty, and safety in sacred
                 journeys.
@@ -113,7 +110,7 @@ const SiteManagement = () => {
             </ul>
 
             <h3 className="ylwColor text-md text-left mb-4">Why Invest?</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 Predictable Recurring Revenue: Long-term site management
                 contracts with governments, foundations, and ministries.
@@ -127,7 +124,7 @@ const SiteManagement = () => {
             <h3 className="ylwColor text-md text-left mb-4">
               Humble Goal with Profound Impact:
             </h3>
-            <p className="text-white leading-relaxed mb-6  mb-[250px]">
+            <p className="text-white text-sm leading-relaxed mb-6  mb-[250px]">
               Through imaginative planning and improved services, we aim to
               increase per-visitor spending by at least USD 100 — a modest
               figure that, at scale of tens of millions of pilgrims, represents

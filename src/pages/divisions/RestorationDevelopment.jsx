@@ -3,11 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import ScrollToTop from "../../components/ScrollToTop";
-import { useCleanURL } from "../../hooks/useCleanURL";
-
 const RestorationDevelopment = () => {
   const navigate = useNavigate();
-  useCleanURL();
 
   const navigateToPage = (path) => {
     navigate(path);
@@ -20,7 +17,7 @@ const RestorationDevelopment = () => {
         <div className="pt-20">
           {/* Banner */}
           <div
-            className="h-96 bg-cover bg-center flex items-center justify-center"
+            className="h-96 bg-cover bg-left md:bg-center flex items-center justify-center"
             style={{
               backgroundImage: `url('${
                 import.meta.env.BASE_URL
@@ -28,7 +25,7 @@ const RestorationDevelopment = () => {
             }}
           >
             <div className="text-center relative">
-              <p className="max-w-6xl max-auto text-white text-2xl md:text-4xl px-2 md:px-0">
+              <p className="max-w-4xl max-auto text-white text-xl md:text-2xl px-2 md:px-0">
                 We build not just walls and domes, but sanctuaries of the soul -
                 where faith, history, and future meet.
               </p>
@@ -48,7 +45,7 @@ const RestorationDevelopment = () => {
 
           {/* Content */}
           <div className="max-w-7xl mx-auto px-4 py-10">
-            <h1 className="ylwColor text-4xl font-bold mb-4 font-notoSerif text-center mb-12">
+            <h1 className="ylwColor text-2xl md:text-4xl font-bold font-notoSerif text-center mb-12">
               The Restoration & Development
             </h1>
             <h2 className="ylwColor text-xl md:text-2xl text-left mb-4">
@@ -57,7 +54,7 @@ const RestorationDevelopment = () => {
             <h3 className="ylwColor text-md text-left mb-4">
               Scope & Core Focus
             </h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 Sacred & Historic Restoration: Mosques, forts, heritage trails,
                 battle trails, historic homes and Arab heritage landmarks
@@ -75,7 +72,7 @@ const RestorationDevelopment = () => {
               </li>
             </ul>
             <h3 className="ylwColor text-md text-left mb-4">Our Strategy</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 Sanctity First: Projects begin with religious scholars &
                 cultural custodians ensuring spiritual correctness.
@@ -91,7 +88,7 @@ const RestorationDevelopment = () => {
               </li>
             </ul>
             <h3 className="ylwColor text-md text-left mb-4">Visitor Value</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>To enter a restored site is to enter living history.</li>
               <li>
                 Not just a monument - but a sanctuary of faith, poetry, memory,
@@ -104,7 +101,7 @@ const RestorationDevelopment = () => {
             </ul>
 
             <h3 className="ylwColor text-md text-left mb-4">Why Invest?</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 Ever-Green Market: Faith-driven tourism in Saudi Arabia and
                 across the Arab world draws tens of millions annually - ensuring
@@ -125,7 +122,7 @@ const RestorationDevelopment = () => {
             <h3 className="ylwColor text-md text-left mb-4">
               Religious & Arab Heritage
             </h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 text-white text-md mb-[250px]">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 text-white text-sm mb-[250px]">
               <li>
                 Custodianship of Sanctity: Reviving Prophet-era mosques and Arab
                 heritage ensures a spiritual trust passed down through

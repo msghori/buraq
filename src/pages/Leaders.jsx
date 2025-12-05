@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ScrollToTop from "../components/ScrollToTop";
-import { useCleanURL } from "../hooks/useCleanURL";
-
 const Leaders = () => {
-  useCleanURL();
   return (
     <div className="min-h-screen bg-[#1e1e1e] text-white">
       <Navbar />
@@ -114,7 +111,6 @@ const Leaders = () => {
                   Semiconductor Company” five times by the Global Semiconductor
                   Alliance (GSA).
                 </p>
-                <a href="">Explore works</a>
               </div>
             </div>
 
@@ -199,7 +195,6 @@ const Leaders = () => {
                   Pakistan's highest-grossing film. His next feature The Legend
                   of Maula Jatt was a remake of the 1979 film Maula Jatt.
                 </p>
-                <a href="">Explore works</a>
               </div>
               <div className="md:col-span-1">
                 <img

@@ -3,11 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import ScrollToTop from "../../components/ScrollToTop";
-import { useCleanURL } from "../../hooks/useCleanURL";
-
 const AITechnology = () => {
   const navigate = useNavigate();
-  useCleanURL();
 
   const navigateToPage = (path) => {
     navigate(path);
@@ -28,7 +25,7 @@ const AITechnology = () => {
             }}
           >
             <div className="text-center relative">
-              <p className="max-w-6xl max-auto text-white text-2xl md:text-4xl px-2 md:px-0">
+              <p className="max-w-4xl max-auto text-white text-xl md:text-2xl  px-2 md:px-0">
                 Digitizing sanctity, Arab identity, and Kingdom legacy Making
                 history eternal, portable, and alive in every heart.
               </p>
@@ -48,7 +45,7 @@ const AITechnology = () => {
 
           {/* Content */}
           <div className="max-w-7xl mx-auto px-4 py-10">
-            <h1 className="ylwColor text-4xl font-bold mb-4 font-notoSerif text-center mb-12">
+            <h1 className="ylwColor text-2xl md:text-4xl font-bold font-notoSerif text-center mb-12">
               AI & Immersive Technology
             </h1>
 
@@ -57,7 +54,7 @@ const AITechnology = () => {
             </h2>
             <h3 className="ylwColor text-md text-left mb-4">Our Mission</h3>
 
-            <p className="text-white leading-relaxed mb-6">
+            <p className="text-white text-sm leading-relaxed mb-6">
               We are bringing the sacred, the cultural, and the national into
               the digital age.
               <br />
@@ -67,7 +64,7 @@ const AITechnology = () => {
             </p>
 
             <h3 className="ylwColor text-md text-left mb-4">Core Focus</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>Religious Heritage</li>
               <li>
                 AR Pilgrim Guides: Point your device at Uhud, Badr, or Khandaq,
@@ -108,7 +105,7 @@ const AITechnology = () => {
             </ul>
 
             <h3 className="ylwColor text-md text-left mb-4">Customer Value</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>For Pilgrims: Sacred journeys deepened by living history.</li>
               <li>
                 For Arab Youth & Travelers: A proud connection to identity and
@@ -121,7 +118,7 @@ const AITechnology = () => {
               </li>
             </ul>
             <h3 className="ylwColor text-md text-left mb-4">Why Invest?</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md mb-[250px]">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm mb-[250px]">
               <li>
                 Scalable & Borderless: From a shrine in Madinah to a VR headset
                 in New York — heritage travels globally.

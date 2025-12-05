@@ -3,9 +3,7 @@ import Header from "../components/Header.jsx";
 import Contact from "../components/Contact.jsx";
 import Footer from "../components/Footer.jsx";
 import ScrollToTop from "../components/ScrollToTop.jsx";
-import { useCleanURL } from "../hooks/useCleanURL";
 const ContactUs = () => {
-  useCleanURL();
   return (
     <>
       <div className="mt-[130px]">

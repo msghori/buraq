@@ -3,11 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import ScrollToTop from "../../components/ScrollToTop";
-import { useCleanURL } from "../../hooks/useCleanURL";
-
 const BrandingMerchandise = () => {
   const navigate = useNavigate();
-  useCleanURL();
 
   const navigateToPage = (path) => {
     navigate(path);
@@ -28,7 +25,7 @@ const BrandingMerchandise = () => {
             }}
           >
             <div className="text-center relative">
-              <p className="max-w-6xl max-auto text-white text-2xl md:text-4xl px-2 md:px-0">
+              <p className="max-w-4xl max-auto text-white text-xl md:text-2xl px-2 md:px-0">
                 Perfumes • China • Clothing & Apparel • Luggage • Crystal Décor
                 Tourist Souvenirs • Books & Publications.
               </p>
@@ -48,7 +45,7 @@ const BrandingMerchandise = () => {
 
           {/* Content */}
           <div className="max-w-7xl mx-auto px-4 py-10">
-            <h1 className="ylwColor text-4xl font-bold mb-4 font-notoSerif text-center mb-12">
+            <h1 className="ylwColor text-2xl md:text-4xl font-bold font-notoSerif text-center mb-12">
               The Branding & Merchandise
             </h1>
             <h2 className="ylwColor text-xl md:text-2xl text-left mb-4">
@@ -57,7 +54,7 @@ const BrandingMerchandise = () => {
             <h3 className="ylwColor text-md text-left mb-4">
               Scope & Offering
             </h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 Perfumes & Oud Collections: Signature blends inspired by
                 heritage sites.
@@ -78,7 +75,7 @@ const BrandingMerchandise = () => {
             <h3 className="ylwColor text-md text-left mb-4">
               Global Presence & Online Reach
             </h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 At Every Heritage Site: Souvenir houses, curated boutiques,
                 publications & gift shops.
@@ -93,7 +90,7 @@ const BrandingMerchandise = () => {
               </li>
             </ul>
             <h3 className="ylwColor text-md text-left mb-4">Visitor Value</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>Authenticity: Take home Arabia’s soul in tangible form.</li>
               <li>
                 Accessibility: Options from luxury collectibles to affordable
@@ -105,7 +102,7 @@ const BrandingMerchandise = () => {
               </li>
             </ul>
             <h3 className="ylwColor text-md text-left mb-4">Why Invest?</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md mb-[250px]">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm mb-[250px]">
               <li>
                 High-margin vertical: Heritage merchandise sustains revenue far
                 beyond site visits.
@@ -122,7 +119,7 @@ const BrandingMerchandise = () => {
             {/* Other Divisions */}
             <div className="mt-16">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center ylwColor font-notoSerif font-extrabold">
-                <div className="border rounded-md px-4 pt-15 pb-10 relative  mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative  mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -139,7 +136,7 @@ const BrandingMerchandise = () => {
                     Restoration & Development
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -154,7 +151,7 @@ const BrandingMerchandise = () => {
                     Site Management & Enhancement
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative  mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative  mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -171,7 +168,7 @@ const BrandingMerchandise = () => {
                     Tourism & Infrastructure
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative  mb-[190px] sm:mb-[40]  md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative  mb-[190px] sm:mb-[40]  md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -186,7 +183,7 @@ const BrandingMerchandise = () => {
                     AI & Immersive Technology
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative  mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative  mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL

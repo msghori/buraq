@@ -1,10 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import WorkCarousel from "../components/WorkCarousel";
-import { useCleanURL } from "../hooks/useCleanURL";
-
 const WorksDetail = () => {
-  useCleanURL();
   return (
     <>
       <div className="min-h-screen bg-[#1e1e1e] text-white">

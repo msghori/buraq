@@ -3,11 +3,8 @@ import { useNavigate } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import ScrollToTop from "../../components/ScrollToTop";
-import { useCleanURL } from "../../hooks/useCleanURL";
-
 const ImmersiveFilms = () => {
   const navigate = useNavigate();
-  useCleanURL();
 
   const navigateToPage = (path) => {
     navigate(path);
@@ -28,7 +25,7 @@ const ImmersiveFilms = () => {
             }}
           >
             <div className="text-center relative">
-              <p className="max-w-6xl max-auto text-white text-2xl md:text-4xl px-2 md:px-0">
+              <p className="max-w-4xl max-auto text-white text-xl md:text-2xl px-2 md:px-0">
                 Our films are prayers in motion, our kiosks are storytellers in
                 steel, and our immersive shows turn history into living
                 experience. With Bilal Lashari’s vision, Arabia’s story will not
@@ -50,14 +47,14 @@ const ImmersiveFilms = () => {
 
           {/* Content */}
           <div className="max-w-7xl mx-auto px-4 py-10">
-            <h1 className="ylwColor text-4xl font-bold mb-4 font-notoSerif text-center mb-12">
+            <h1 className="ylwColor text-2xl md:text-4xl font-bold font-notoSerif text-center mb-12">
               The Immersive Films & AV Kiosks
             </h1>
             <h2 className="ylwColor text-xl md:text-2xl text-left mb-4">
               Stories that live beyond time.
             </h2>
             <h3 className="ylwColor text-md text-left mb-4">Our Mission</h3>
-            <p className="text-white leading-relaxed mb-6">
+            <p className="text-white text-sm leading-relaxed mb-6">
               Heritage must not only be preserved — it must be told, seen, and
               felt.
               <br />
@@ -67,7 +64,7 @@ const ImmersiveFilms = () => {
             </p>
             <h3 className="ylwColor text-md text-left mb-4">Core Focus</h3>
             Heritage Documentaries & Global Streaming
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 Multilingual productions that carry the sanctity of Mecca,
                 Medina, Hijaz, and Arabia’s heritage to audiences worldwide.
@@ -78,7 +75,7 @@ const ImmersiveFilms = () => {
               </li>
             </ul>
             Cinematic Retelling of Sacred Journeys
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 Battles of Badr, Uhud, and Khandaq recreated with reverence and
                 spectacle.
@@ -89,7 +86,7 @@ const ImmersiveFilms = () => {
               </li>
             </ul>
             Interactive AV Kiosks & Story Pods
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>Placed in heritage sites, airports, and museums.</li>
               <li>
                 Allow pilgrims and travelers to explore stories in their own
@@ -97,7 +94,7 @@ const ImmersiveFilms = () => {
               </li>
             </ul>
             Immersive Storytelling Beyond Film
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 Projection mapping on historic walls, sound-and-light shows, VR
                 domes, and AR exhibitions.
@@ -108,7 +105,7 @@ const ImmersiveFilms = () => {
               </li>
             </ul>
             The Bilal Lashari Advantage
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 Bill Lashari brings cinematic genius, visual grandeur, and
                 emotional impact to Buraq’s storytelling.
@@ -130,7 +127,7 @@ const ImmersiveFilms = () => {
               </li>
             </ul>
             <h3 className="ylwColor text-md text-left mb-4">Customer Value</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm">
               <li>
                 For Pilgrims: A chance to take their journey home - heritage
                 they can relive and share.
@@ -145,7 +142,7 @@ const ImmersiveFilms = () => {
               </li>
             </ul>
             <h3 className="ylwColor text-md text-left mb-4">Why Invest?</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-md mb-[250px]">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm mb-[250px]">
               <li>
                 Scalable Reach: One film, thousands of kiosks, millions of
                 viewers globally.
@@ -168,7 +165,7 @@ const ImmersiveFilms = () => {
             {/* Other Divisions */}
             <div className="mt-16">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center ylwColor font-notoSerif font-extrabold">
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
