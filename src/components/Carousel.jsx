@@ -8,13 +8,14 @@ const Carousel = () => {
       <div
         className="text-center overflow-hidden 
         mt-20 lg:mt-[108px] h-auto md:h-screen w-full bg-no-repeat
-        bg-cover md:bg-cover
-        bg-center
+        bg-cover
+        bg-top md:bg-center
        bg-[url('/images/banner-home-mobile.webp')]
+       sm:bg-[url('/images/banner-home-mobile-534.webp')]
         md:bg-[url('/images/banner-home.webp')]"
         id="home"
       >
-        <div className="max-w-4xl mx-auto flex flex-col items-center justify-center h-full w-full py-20 md:py-70 px-8 md:px-4">
+        <div className="max-w-4xl mx-auto flex flex-col items-center justify-center h-full w-full py-20 sm:py-40 md:py-70 px-8 md:px-4">
           <h1
             className="max-w-[250px] md:max-w-full  ylwColor font-bold mb-2 md:mb-4 font-notoSerif px-4 text-lg md:text-4xl"
             style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}
