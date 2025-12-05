@@ -16,7 +16,7 @@ const Carousel = () => {
       >
         <div className="max-w-4xl mx-auto flex flex-col items-center justify-center h-full w-full py-20 md:py-70 px-8 md:px-4">
           <h1
-            className="max-w-[250px] md:max-w-full  ylwColor font-bold mb-2 md:mb-4 font-notoSerif px-4 text-md md:text-4xl"
+            className="max-w-[250px] md:max-w-full  ylwColor font-bold mb-2 md:mb-4 font-notoSerif px-4 text-lg md:text-4xl"
             style={{ textShadow: "2px 2px 4px rgba(0,0,0,0.8)" }}
           >
             Arab Heritage must lead Arab Tourism
