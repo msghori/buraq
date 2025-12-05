@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../component/Header";
-import Carousel from "../component/Carousel";
-import Vision from "../component/Vision";
-import Divisions from "../component/Divisions";
-import Contact from "../component/Contact";
-import Footer from "../component/Footer";
-import ScrollToTop from "../component/ScrollToTop";
+import Header from "../components/Header";
+import Carousel from "../components/Carousel";
+import Vision from "../components/Vision";
+import Divisions from "../components/Divisions";
+import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Home = () => {
 

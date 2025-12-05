@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../component/Navbar";
-import Footer from "../component/Footer";
-import ScrollToTop from "../component/ScrollToTop";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 import { useCleanURL } from "../hooks/useCleanURL";
 
 const Leaders = () => {

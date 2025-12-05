@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../component/Header.jsx";
-import Contact from "../component/Contact.jsx";
-import Footer from "../component/Footer.jsx";
-import ScrollToTop from "../component/ScrollToTop.jsx";
+import Header from "../components/Header.jsx";
+import Contact from "../components/Contact.jsx";
+import Footer from "../components/Footer.jsx";
+import ScrollToTop from "../components/ScrollToTop.jsx";
 import { useCleanURL } from "../hooks/useCleanURL";
 const ContactUs = () => {
   useCleanURL();

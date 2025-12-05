@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 // import Header from "../component/Header";
-import Footer from "../component/Footer";
-// import Navbar from "../component/Navbar";
-import Header from "../component/Header";
-import ScrollToTop from "../component/ScrollToTop";
+import Footer from "../components/Footer";
+// import Navbar from "../components/Navbar";
+import Header from "../components/Header";
+import ScrollToTop from "../components/ScrollToTop";
 import { useCleanURL } from "../hooks/useCleanURL";
 
 const KlBiography = () => {
