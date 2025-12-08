@@ -59,7 +59,7 @@ const Leaders = () => {
             {/* lashari */}
             {/* sabahat */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-              <div className="md:col-span-3 order-1 md:order-none">
+              <div className="md:col-span-3 order-1 md:order-0">
                 <h2 className="ylwColor text-2xl font-bold mb-4">
                   Sabahat Rafiq
                 </h2>
@@ -74,7 +74,7 @@ const Leaders = () => {
                   with practical community engagement.
                 </p>
               </div>
-              <div className="md:col-span-1 order-2 md:order-none">
+              <div className="md:col-span-1 order-2 md:order-0">
                 <img
                   src={`${import.meta.env.BASE_URL}images/leaders/sabahat.webp`}
                   alt="sabahat"
@@ -86,14 +86,14 @@ const Leaders = () => {
 
             {/* Naveed Sherwani */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-              <div className="md:col-span-1 order-2 md:order-none">
+              <div className="md:col-span-1 order-2 md:order-0">
                 <img
                   src={`${import.meta.env.BASE_URL}images/leaders/naveed.webp`}
                   alt="naveed"
                   className="w-full h-auto object-cover rounded-lg"
                 />
               </div>
-              <div className="md:col-span-3 order-1 md:order-none">
+              <div className="md:col-span-3 order-1 md:order-0">
                 <h2 className="ylwColor text-2xl font-bold mb-4">
                   Naveed Sherwani
                 </h2>
@@ -117,7 +117,7 @@ const Leaders = () => {
             {/* Naveed Sherwani */}
             {/* Ahmed Osilan */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-              <div className="md:col-span-1 order-2 md:order-none">
+              <div className="md:col-span-1 order-2 md:order-0">
                 <img
                   src={`${
                     import.meta.env.BASE_URL
@@ -126,7 +126,7 @@ const Leaders = () => {
                   className="w-full h-auto object-cover rounded-lg"
                 />
               </div>
-              <div className="md:col-span-3 order-1 md:order-none">
+              <div className="md:col-span-3 order-1 md:order-0">
                 <h2 className="ylwColor text-2xl font-bold mb-4">
                   Ahmed Osilan
                 </h2>

@@ -124,7 +124,7 @@ const SiteManagement = () => {
             <h3 className="ylwColor text-md text-left mb-4">
               Humble Goal with Profound Impact:
             </h3>
-            <p className="text-white text-sm leading-relaxed mb-6  mb-[250px]">
+            <p className="text-white text-sm leading-relaxed  mb-[250px]">
               Through imaginative planning and improved services, we aim to
               increase per-visitor spending by at least USD 100 — a modest
               figure that, at scale of tens of millions of pilgrims, represents
@@ -134,7 +134,7 @@ const SiteManagement = () => {
             {/* Other Divisions */}
             <div className="mt-16">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center ylwColor font-notoSerif font-extrabold">
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -151,7 +151,7 @@ const SiteManagement = () => {
                     Restoration & Development
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -168,7 +168,7 @@ const SiteManagement = () => {
                     Tourism & Infrastructure
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -183,7 +183,7 @@ const SiteManagement = () => {
                     AI & Immersive Technology
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -198,7 +198,7 @@ const SiteManagement = () => {
                     Immersive Films & AV Kiosks
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL

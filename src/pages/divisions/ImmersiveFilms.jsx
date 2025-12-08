@@ -142,7 +142,7 @@ const ImmersiveFilms = () => {
               </li>
             </ul>
             <h3 className="ylwColor text-md text-left mb-4">Why Invest?</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm mb-[250px]">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 text-white text-sm mb-[250px]">
               <li>
                 Scalable Reach: One film, thousands of kiosks, millions of
                 viewers globally.
@@ -182,7 +182,7 @@ const ImmersiveFilms = () => {
                     Restoration & Development
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -197,7 +197,7 @@ const ImmersiveFilms = () => {
                     Site Management & Enhancement
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -214,7 +214,7 @@ const ImmersiveFilms = () => {
                     Tourism & Infrastructure
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -229,7 +229,7 @@ const ImmersiveFilms = () => {
                     AI & Immersive Technology
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL

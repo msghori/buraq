@@ -134,7 +134,7 @@ const TourismInfrastructure = () => {
               </li>
             </ul>
             <h3 className="ylwColor text-md text-left mb-4">Why Invest?</h3>
-            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 mb-6 text-white text-sm mb-[250px]">
+            <ul className="list-disc list-outside leading-tight space-y-2 ps-5 text-white text-sm mb-[250px]">
               <li>
                 Revenue Expansion: Tourism ecosystem multiplies spend across
                 infrastructure, hospitality, retail, and events.
@@ -155,7 +155,7 @@ const TourismInfrastructure = () => {
             {/* Other Divisions */}
             <div className="mt-16">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center ylwColor font-notoSerif font-extrabold">
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -172,7 +172,7 @@ const TourismInfrastructure = () => {
                     Restoration & Development
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -187,7 +187,7 @@ const TourismInfrastructure = () => {
                     Site Management & Enhancement
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -202,7 +202,7 @@ const TourismInfrastructure = () => {
                     AI & Immersive Technology
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
@@ -217,7 +217,7 @@ const TourismInfrastructure = () => {
                     Immersive Films & AV Kiosks
                   </button>
                 </div>
-                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-[0]">
+                <div className="border rounded-md px-4 pt-15 pb-10 relative mb-[190px] sm:mb-[40] md:mb-[90] lg:mb-0">
                   <img
                     src={`${
                       import.meta.env.BASE_URL
